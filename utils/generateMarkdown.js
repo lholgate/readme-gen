@@ -58,7 +58,7 @@ function generateMarkdown(data) {
     };
 
     //Write Contributing in to return string
-    content = content + '## Contributing /> \n';
+    content = content + '## Contributing \n';
     indx = data.findIndex(x => x.contributing);
     for (const element of data[indx].contributing){
         content = content + element +' <br /> \n';
