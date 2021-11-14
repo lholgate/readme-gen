@@ -1,6 +1,4 @@
-# Testing
-![badge](https://img.shields.io/badge/license-Common-brightgreen)
-![badge](https://img.shields.io/badge/license-Open-brightgreen)
+# README Generator
 ## Table of Contents 
 - [Description](#description) 
 - [Installation](#installation) 
@@ -10,24 +8,20 @@
 - [Tests](#tests) 
 - [Questions](#questions) 
 ## Description 
-Description Line 1 <br /> 
-Description Line 2 <br /> 
-Description Line 3 <br /> 
+Node JS applciation to generate project README files. <br /> 
+This is a second line for the Description section. <br /> 
 ## Installation 
-Standard Install <br /> 
-Requires node.js with inquirer package installed <br /> 
+Requires node.js installed. <br /> 
+Requires inquirer package installed. <br /> 
 ## Usage 
-node index.js <br />
+Navigate to readme-gen root directory. <br />
+Run node index.js <br />
 ## License 
-![badge](https://img.shields.io/badge/license-Common-brightgreen)
-<br />This application is covered by the Common license.
-<br />![badge](https://img.shields.io/badge/license-Open-brightgreen)
-<br />This application is covered by the Open license.
-<br />## Contributing /> 
+## Contributing /> 
 Lewis Holgate <br /> 
 ## Tests 
 None <br />
 ## Questions 
-For any questions see contact information below - <br /> 
+For questions contact references below - <br /> 
 <br />Find me on GitHub: [lholgate](https://github.com/lholgate)<br />
 Email me with any questions: lholgate6162@gmail.com<br />
