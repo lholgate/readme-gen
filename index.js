@@ -7,29 +7,30 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = ['Title','Description','Installation','Usage','License','Contributing','Tests','Question','GitUser','Email','Save'];
 const licenseValues = ['Apache','MIT','GNU','Mozilla','Common','Eclipse','Open'];
 
-let answers = [
-    { title: 'Testing' },
-    {
-      description: [
-        'Description Line 1',
-        'Description Line 2',
-        'Description Line 3'
-      ]
-    },
-    {
-      install: [
-        'Standard Install',
-        'Requires node.js with inquirer package installed'
-      ]
-    },
-    { usage: [ 'node index.js' ] },
-    { license: [ 'Common', 'Open' ] },
-    { contributing: [ 'Lewis Holgate' ] },
-    { tests: [ 'None' ] },
-    { question: [ 'For any questions see contact information below -' ] },
-    { gituser: 'lholgate' },
-    { email: 'lholgate6162@gmail.com' }
-  ];
+let answers = [];
+    // [
+    // { title: 'Testing' },
+    // {
+    //   description: [
+    //     'Description Line 1',
+    //     'Description Line 2',
+    //     'Description Line 3'
+    //   ]
+    // },
+    // {
+    //   install: [
+    //     'Standard Install',
+    //     'Requires node.js with inquirer package installed'
+    //   ]
+    // },
+    // { usage: [ 'node index.js' ] },
+    // { license: [ 'Common', 'Open' ] },
+    // { contributing: [ 'Lewis Holgate' ] },
+    // { tests: [ 'None' ] },
+    // { question: [ 'For any questions see contact information below -' ] },
+    // { gituser: 'lholgate' },
+    // { email: 'lholgate6162@gmail.com' }
+    // ];
 let response = {};
 
 //Function to prompt and save Title value
