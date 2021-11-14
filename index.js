@@ -211,9 +211,6 @@ async function saveEmail() {
     });
 };
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
 // TODO: Create a function to initialize app
 async function init() {
     await inquirer.prompt([
@@ -264,8 +261,14 @@ async function init() {
     }   
     
     if (response.currentTask === "Save") {
-        console.log(answers);
-        console.log(generateMarkdown(answers));
+        fs.writeFile("README.md", generateMarkdown(answers), (err) => {
+            if (err)
+                console.log(err);
+            else {
+                console.log("File written successfully\n");
+                console.log(fs.readFileSync("README.md", "utf8"));
+            }
+        });
     }
     else {
         response = {};
