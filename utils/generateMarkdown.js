@@ -1,14 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -38,28 +27,28 @@ function generateMarkdown(data) {
     content = content + '- [Questions](#questions) \n';
 
     //Write description in to return string
-    content = content + '## Description <br /> \n';
+    content = content + '## Description \n';
     indx = data.findIndex(x => x.description);
     for (const element of data[indx].description){
         content = content + element +' <br /> \n';
     };
 
     //Write installation in to return string
-    content = content + '## Installation <br /> \n';
+    content = content + '## Installation \n';
     indx = data.findIndex(x => x.install);
     for (const element of data[indx].install){
         content = content + element +' <br /> \n';
     };
     
     //Write usage in to return string
-    content = content + '## Usage  <br /> \n';
+    content = content + '## Usage \n';
     indx = data.findIndex(x => x.usage);
     for (const element of data[indx].usage){
         content = content + element +' <br />\n';
     };
 
     //Write license in to return string
-    content = content + '## License <br /> \n';
+    content = content + '## License \n';
     indx = data.findIndex(x => x.license);
     for (const element of data[indx].license){
         content = content + `![badge](https://img.shields.io/badge/license-${element}-brightgreen)` +'\n';
@@ -69,21 +58,21 @@ function generateMarkdown(data) {
     };
 
     //Write Contributing in to return string
-    content = content + '## Contributing <br /> \n';
+    content = content + '## Contributing /> \n';
     indx = data.findIndex(x => x.contributing);
     for (const element of data[indx].contributing){
         content = content + element +' <br /> \n';
     };
     
     //Write Tests in to return string
-    content = content + '## Tests <br /> \n';
+    content = content + '## Tests \n';
     indx = data.findIndex(x => x.tests);
     for (const element of data[indx].tests){
         content = content + element +' <br />\n';
     };
 
      //Write questions in to return string
-     content = content + '## Questions <br /> \n';
+     content = content + '## Questions \n';
      indx = data.findIndex(x => x.question);
      for (const element of data[indx].question){
          content = content + element +' <br /> \n';
