@@ -14,7 +14,7 @@ Uses node.js from a command line to prompt for specific values that will be writ
 
 ![README Generator](./assets/images/readme-gen.png)
 
-![Readme Video](https://watch.screencastify.com/v/cv8fbjS9b2VwMpSyJY2y)
+(https://watch.screencastify.com/v/cv8fbjS9b2VwMpSyJY2y "Presentation Video")
 ## Installation 
 Requires the the "inquirer" package to be installed with npm <br /> 
 clone repository from GitHub <br /> 
