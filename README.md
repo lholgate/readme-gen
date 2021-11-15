@@ -1,5 +1,4 @@
-# 111
-![badge](https://img.shields.io/badge/license-Open-brightgreen)
+# Readme Generator
 ## Table of Contents 
 - [Description](#description) 
 - [Installation](#installation) 
@@ -9,19 +8,11 @@
 - [Tests](#tests) 
 - [Questions](#questions) 
 ## Description 
-111 <br /> 
 ## Installation 
-111 <br /> 
+npm install <br /> 
 ## Usage 
-111 <br />
+Change directory to project root. <br />
+run "node index.js" as command prompt <br />
 ## License 
-![badge](https://img.shields.io/badge/license-Open-brightgreen)
-<br />This application is covered by the Open license.
-<br />## Contributing 
-1111 <br /> 
-## Tests 
-11111 <br />
+## Contributing 
 ## Questions 
-1111 <br /> 
-<br />Find me on GitHub: [11111](https://github.com/11111)<br />
-Email me with any questions: 11111<br />

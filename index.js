@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = ['Title','Description','Installation','Usage','License','Contributing','Tests','Question','GitUser','Email','Save'];
+const questions = ['Title','Description','Installation','Usage','License','Contributing','Tests','Question','GitUser','Email','Save','Quit','Clear'];
 const licenseValues = ['Apache','MIT','GNU','Mozilla','Common','Eclipse','Open'];
 
 let answers = [];
@@ -42,7 +42,13 @@ async function saveTitle(){
         message: "What is the Title of your project?"
         }
     ]).then(function(data){
-        answers.push(data);
+        if (answers.some(test => test.title)) {
+            let ind = answers.findIndex(x => x.title);
+            answers[ind].title=data.title;
+        }
+        else {
+            answers.push(data);
+        }
     });
 };
 
@@ -195,7 +201,13 @@ async function saveGitUser() {
         message: "Enter your Git account."
         }
     ]).then(function(data){
-        answers.push(data);
+        if (answers.some(test => test.gituser)) {
+            let ind = answers.findIndex(x => x.gituser);
+            answers[ind].gituser=data.gituser;
+        }
+        else {
+            answers.push(data);
+        }
     });
 };
 
@@ -208,7 +220,13 @@ async function saveEmail() {
         message: "Enter your contact Email."
         }
     ]).then(function(data){
-        answers.push(data);
+        if (answers.some(test => test.email)) {
+            let ind = answers.findIndex(x => x.email);
+            answers[ind].email=data.email;
+        }
+        else {
+            answers.push(data);
+        }
     });
 };
 
@@ -259,8 +277,15 @@ async function init() {
             break;
         case "Save":
             break;
+        case "Clear":
+            answers = [];
+            break;
     }   
     
+    process.stdout.write("\u001b[3J\u001b[2J\u001b[1J");
+    console.clear();
+    console.log(generateMarkdown(answers));
+
     if (response.currentTask === "Save") {
         fs.writeFile("README.md", generateMarkdown(answers), (err) => {
             if (err)
@@ -271,11 +296,10 @@ async function init() {
             }
         });
     }
-    else {
+    else if (response.currentTask != "Quit") {
         response = {};
         init();
     }
-   
 
 }
 
