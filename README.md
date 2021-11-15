@@ -1,4 +1,4 @@
-# 111
+# Readme Generator
 ![badge](https://img.shields.io/badge/license-Open-brightgreen)
 ## Table of Contents 
 - [Description](#description) 
@@ -9,19 +9,23 @@
 - [Tests](#tests) 
 - [Questions](#questions) 
 ## Description 
-111 <br /> 
+Application to easily create README.md files for any project. <br /> 
+Uses node.js from a command line to prompt for specific values that will be write to the new file. <br /> 
 ## Installation 
-111 <br /> 
+Requires the the "inquirer" package to be installed with npm <br /> 
+clone repository from GitHub <br /> 
+Run "npm install" in the cloned directory. <br /> 
 ## Usage 
-111 <br />
+Change directory to project root.  <br />
+run "node index.js" at command prompt <br />
 ## License 
 ![badge](https://img.shields.io/badge/license-Open-brightgreen)
 <br />This application is covered by the Open license.
 <br />## Contributing 
-1111 <br /> 
+Lewis Holgate <br /> 
 ## Tests 
-11111 <br />
+None <br />
 ## Questions 
-1111 <br /> 
-<br />Find me on GitHub: [11111](https://github.com/11111)<br />
-Email me with any questions: 11111<br />
+For any questions or comments, please contact Lewis Holgate at the email below. <br /> 
+<br />Find me on GitHub: [lholgate](https://github.com/lholgate)<br />
+Email me with any questions: lholgate6162@gmail.com<br />
